@@ -1,0 +1,28 @@
+<div class="container">
+
+  <alert type="success">
+    Good work
+  </alert>
+
+  <alert>
+    Almost out of stock
+  </alert>
+
+  <alert type="error"
+         (closed)="onAlertClosed()">
+    We have a problem
+  </alert>
+</div>
+
+<hr>
+<h1>Pipe sample</h1>
+Filter: <input type="text"
+       [(ngModel)]="filterExpression"><br>
+<ul>
+  <li *ngFor="let user of users | filter:'name':filterExpression">
+    {{user.name}}
+  </li>
+</ul>
+<hr>
+
+<button (click)="onAdduser()">Add user</button>

@@ -1,0 +1,28 @@
+<div>
+  <h3>Table View</h3>
+  <div class="alert alert-warning" *ngIf="errorMessage">
+    {{this.errorMessage}}
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th class="{{selectedClass('id')}}" (click)="onSort('id')">Id</th>
+        <th class="{{selectedClass('sku')}}" (click)="onSort('sku')">Sku</th>
+        <th class="{{selectedClass('title')}}" (click)="onSort('title')">Title</th>
+        <th class="{{selectedClass('price')}}" (click)="onSort('price')">Price</th>
+        <th class="{{selectedClass('basePrice')}}" (click)="onSort('basePrice')">Base Price</th>
+        <th class="{{selectedClass('stocked')}}" (click)="onSort('stocked')">Stocked</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{product.id}}</td>
+        <td>{{product.sku}}</td>
+        <td>{{product.title}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.basePrice}}</td>
+        <td>{{product.stocked | yesNo}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,61 @@
+{
+  "name": "ng-app",
+  "version": "0.0.1",
+  "scripts": {
+    "ng": "ng",
+    "serve": "ng serve --open",
+    "build": "ng build --stats-json",
+    "build:prod": "ng build --prod --stats-json",
+    "test": "jest --watchAll",
+    "lint": "ng lint --type-check",
+    "format": "prettier --write '**/*.{ts,json,css, scss}'",
+    "analyse": "webpack-bundle-analyzer dist/myApp/stats.json",
+    "cleanup": "rimraf dist* yarn-error.log"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^6.0.3",
+    "@angular/common": "^6.0.3",
+    "@angular/compiler": "^6.0.3",
+    "@angular/core": "^6.0.3",
+    "@angular/forms": "^6.0.3",
+    "@angular/http": "^6.0.3",
+    "@angular/platform-browser": "^6.0.3",
+    "@angular/platform-browser-dynamic": "^6.0.3",
+    "@angular/router": "^6.0.3",
+    "bootstrap": "3",
+    "core-js": "^2.5.4",
+    "intl": "^1.2.5",
+    "rxjs": "^6.0.0",
+    "zone.js": "^0.8.26"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.6.8",
+    "@angular/cli": "~6.0.8",
+    "@angular/compiler-cli": "^6.0.3",
+    "@angular/language-service": "^6.0.3",
+    "@types/intl": "^1.2.0",
+    "@types/jest": "^23.0.0",
+    "@types/node": "~8.9.4",
+    "codelyzer": "~4.2.1",
+    "expect-more-jest": "^1.0.1",
+    "jest": "^23.1.0",
+    "jest-preset-angular": "^5.2.2",
+    "jest-watch-typeahead": "^0.1.0",
+    "prettier": "^1.13.4",
+    "rimraf": "^2.6.2",
+    "ts-node": "~5.0.1",
+    "tslint": "~5.9.1",
+    "typescript": "~2.7.2",
+    "webpack-bundle-analyzer": "^2.13.1"
+  },
+  "jest": {
+    "verbose": false,
+    "setupTestFrameworkScriptFile": "<rootDir>/test/jest.setup.ts",
+    "preset": "jest-preset-angular",
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  }
+}

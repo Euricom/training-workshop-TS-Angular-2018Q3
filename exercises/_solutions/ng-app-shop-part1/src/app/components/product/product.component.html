@@ -1,0 +1,30 @@
+<div class="panel panel-default">
+  <div class="panel-heading">{{product.title}}</div>
+  <div class="panel-body">
+    <img [src]="product.image" width="100%">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td><strong>Id:</strong></td>
+          <td>{{product.id}}</td>
+        </tr>
+        <tr>
+          <td><strong>Sku:</strong></td>
+          <td>{{product.sku}}</td>
+        </tr>
+        <tr>
+          <td><strong>Title:</strong></td>
+          <td>{{product.title}}</td>
+        </tr>
+        <tr>
+          <td><strong>Price:</strong></td>
+          <td>{{product.price | currency:'EUR':true}}</td>
+        </tr>
+        <tr>
+          <td><strong>Base Price:</strong></td>
+          <td>{{product.basePrice | currency:'EUR':true}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

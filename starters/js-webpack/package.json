@@ -1,0 +1,51 @@
+{
+  "name": "js-webpack",
+  "version": "1.0.0",
+  "description": "Babel WebPack Template",
+  "scripts": {
+    "serve": "webpack-dev-server --open --inline --hot",
+    "build": "webpack",
+    "build:prod": "webpack -p",
+    "lint": "eslint \"app/**/*.js\"",
+    "format": "prettier --write 'app/**/*.{js,css}'",
+    "test:ci": "jest",
+    "test": "jest --watch --notify"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "intl": "^1.2.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/node": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "@babel/preset-stage-2": "^7.0.0-beta.49",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.0.1",
+    "babel-loader": "8.0.0-beta.3",
+    "cross-env": "^5.0.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.12.0",
+    "file-loader": "^1.1.11",
+    "jasmine-expect": "^3.8.3",
+    "jest": "^23.1.0",
+    "jest-watch-typeahead": "^0.1.0",
+    "prettier": "^1.6.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.10.0",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "jest": {
+    "verbose": false,
+    "setupTestFrameworkScriptFile": "<rootDir>/test/jest.setup.js",
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+<h3>Panel View</h3>
+<div class="alert alert-warning" *ngIf="errorMessage">
+  {{this.errorMessage}}
+</div>
+<div class="flex-grid">
+  <div class="col" *ngFor="let product of products">
+    <product [product]="product"></product>
+  </div>
+</div>

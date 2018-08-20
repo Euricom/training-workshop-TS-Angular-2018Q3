@@ -1,0 +1,18 @@
+{
+  "tasks": [{
+      "id": 1,
+      "name": "Drink coffee",
+      "completed": true
+    },
+    {
+      "id": 2,
+      "name": "Write code",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "name": "Document work",
+      "completed": false
+    }
+  ]
+}

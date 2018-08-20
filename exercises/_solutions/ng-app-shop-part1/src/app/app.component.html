@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>My Web Shop</h1>
+  <hr>
+  <button class="btn btn-default"
+          (click)="onToggle()">Toggle</button>
+
+  <div *ngIf="showTable;then table else panel"></div>
+  <ng-template #table>
+    <product-table-list></product-table-list>
+  </ng-template>
+  <ng-template #panel>
+    <product-panel-list></product-panel-list>
+  </ng-template>
+</div>

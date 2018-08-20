@@ -1,0 +1,45 @@
+{
+  "name": "ts-node-unittest",
+  "version": "1.0.0",
+  "description": "Node TypeScript Template With Unit Testing In Jest",
+  "scripts": {
+    "build": "tsc --outdir ./build",
+    "start:mailsys": "nodemon --exec ./node_modules/.bin/ts-node ./src/mailsystem/runner.ts",
+    "start:movie": "nodemon --exec ./node_modules/.bin/ts-node ./src/movieService/runner.ts",
+    "lint": "tslint --project tsconfig.json --format stylish",
+    "test:ci": "jest",
+    "test": "jest --watch --notify",
+    "format": "prettier --write '**/*.{ts,css}'"
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.0.0",
+    "@types/node": "^10.3.1",
+    "expect-more-jest": "^1.0.1",
+    "jest": "^23.1.0",
+    "jest-preset-typescript": "^1.0.1",
+    "jest-watch-typeahead": "^0.1.0",
+    "nodemon": "^1.17.5",
+    "prettier": "^1.13.4",
+    "ts-jest": "^22.4.6",
+    "ts-node": "^6.1.0",
+    "tslint": "^5.10.0",
+    "tslint-config-airbnb": "^5.9.2",
+    "tslint-config-prettier": "^1.13.0",
+    "typescript": "^2.9.1"
+  },
+  "jest": {
+    "verbose": false,
+    "testEnvironment": "node",
+    "preset": "jest-preset-typescript",
+    "setupTestFrameworkScriptFile": "<rootDir>/jest.setup.ts",
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ]
+  },
+  "author": "peter.cosemans@euri.com",
+  "license": "MIT"
+}

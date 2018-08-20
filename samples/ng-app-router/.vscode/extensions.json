@@ -1,0 +1,36 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846
+  // for the documentation about the extensions.json format
+  "recommendations": [
+    // Angular 2 TypeScript Emmet Support in string templates
+    "jakethashi.vscode-angular2-emmet",
+    // Angular Language Service
+    "angular.ng-template",
+    // Amgular Syntax highlighting of inline html and css
+    "natewallace.angular2-inline",
+    // Format-on-save with Prettier
+    "esbenp.prettier-vscode",
+    // npm intellisense
+    "christian-kohler.npm-intellisense",
+    // path intellisense
+    "christian-kohler.path-intellisense",
+    // Color Hightlight
+    "naumovs.color-highlight",
+    // TSLint
+    "eg2.tslint",
+    // json to ts
+    "GregorBiswanger.json2ts",
+    // SCSS IntelliSense
+    "mrmlnc.vscode-scss",
+    // Sorting HTML attributes
+    "mrmlnc.vscode-attrs-sorter",
+    // Auto Close Tag
+    "formulahendry.auto-close-tag",
+    // Auto Rename Tag
+    "formulahendry.auto-rename-tag",
+    // js-beautify for VS Code (only used for html format)
+    "HookyQR.beautify",
+    // Chrome debugger
+    "msjsdiag.debugger-for-chrome"
+  ]
+}

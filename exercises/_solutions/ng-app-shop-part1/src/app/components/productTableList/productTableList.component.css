@@ -1,0 +1,25 @@
+table > thead > tr > th {
+  cursor: pointer;
+  position: relative;
+  background-image: none;
+}
+
+table > thead > tr > th:after,
+table > thead > tr > th.sort-false:after,
+table > thead > tr > th.sort-true:after {
+  font-family: FontAwesome;
+  padding-left: 5px;
+}
+
+table > thead > tr > th:after {
+  content: "\f0dc";
+  color: #ddd;
+}
+table > thead > tr > th.sort-false:after {
+  content: "\f0de";
+  color: #767676;
+}
+table > thead > tr > th.sort-true:after {
+  content: "\f0dd";
+  color: #767676;
+}
